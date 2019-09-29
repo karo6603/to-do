@@ -2,7 +2,11 @@
 
 const form = document.querySelector("form");
 
-form.addEventListener("submit", post);
+form.addEventListener("submit", e => {
+  post();
+
+  e.preventDefault();
+});
 
 document.addEventListener("DOMContentLoaded", get);
 
