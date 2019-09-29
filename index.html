@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+        <header>
+                <h1>To do list</h1>
+            </header>
+            <form id="addnewitem">
+                <label for="item">Add item to list</label>
+                <input type="text" name="item"></input>
+                <input type="submit" name="submit" value="Add item"></input>
+            </form>
+            <div id="todolist">
+                <h3>Uncompleted items</h3>
+                <div class="uncompleted">
+
+                </div>
+                <h3>Completed items</h3>
+                <div class="completed">
+
+                </div>
+            </div>
+
+            <template>
+                <article class="todolist-item">
+                    <span class="itemName"></span>
+                    <span class="itemDone"></span>
+                    <span class="itemDelete"></span>
+                </article>
+    <script src="script.js"></script>
+  </body>
+</html>
